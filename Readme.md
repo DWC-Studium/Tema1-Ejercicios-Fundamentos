@@ -31,26 +31,26 @@
 <h1>Ejercicio 14</h1>
 <p>SReescribe este if usando el operador ternario '?':</p>
 
-  if (a + b <p 4) {
-    result = 'Por debajo';
-  } else {
-    result = 'Por encima';
-  }
+    if (a + b <p 4) {
+      result = 'Por debajo';
+    } else {
+      result = 'Por encima';
+    }
 
   <h1>Ejercicio 15</h1>
 <p>Reescribe if..else usando múltiples operadores ternarios '?'.</p>
 <p>Para legibilidad, es recomendable dividir el código en múltiples líneas.</p>
 
-  let mensaje;
-  if (login == 'Empleado') {
-    mensaje = 'Hola';
-  } else if (login == 'Director') {
-    mensaje = 'Felicidades';
-  } else if (login == '') {
-    mensaje = 'No te has registrado';
-  } else {
-    mensaje = '';
-  }
+    let mensaje;
+    if (login == 'Empleado') {
+      mensaje = 'Hola';
+    } else if (login == 'Director') {
+      mensaje = 'Felicidades';
+    } else if (login == '') {
+      mensaje = 'No te has registrado';
+    } else {
+      mensaje = '';
+    }
 
 <h1>Ejercicio 16</h1>
 <p>Escribe una condición “if” para comprobar que edad está entre 14 y 90 inclusive.</p>
@@ -116,13 +116,13 @@
 <p>La siguiente función devuelve true si el parámetro edad es mayor que 18.</p>
 <p>En cualquier otro caso pide una confirmación y la devuelve como resultado.</p>
 
-  function comprobarEdad(edad) {
-    if (edad > 18) {
-      return true;
-    } else {
-      return confirm('¿Tienes el permiso de tus padres para acceder a esta página?');
+    function comprobarEdad(edad) {
+      if (edad > 18) {
+        return true;
+      } else {
+        return confirm('¿Tienes el permiso de tus padres para acceder a esta página?');
+      }
     }
-  }
 
 <p>Reescribe manteniendo el mismo comportamiento, pero sin if, en una única línea.</p>
 <p>Haz dos variantes:</p>
@@ -135,16 +135,16 @@
 <p>Escribe una función min(a,b) que devuelve el menor de los dos números a y b.</p>
 <p>Por ejemplo:</p>
 
-  min(2, 5) == 2
-  min(3, -1) == -1
-  min(1, 1) == 1
+    min(2, 5) == 2
+    min(3, -1) == -1
+    min(1, 1) == 1
 
 <h1>Ejercicio 27</h1>
 <p>Escribe una función potencia(x,n) que devuelve x elevado a n. O, en otras palabras, multiplica x por sí mismo n veces y devuelve el resultado.</p>
 
-  potencia(3, 2) = 3 * 3 = 9
-  potencia(3, 3) = 3 * 3 * 3 = 27
-  potencia(1, 100) = 1 * 1 * ...* 1 = 1
+    potencia(3, 2) = 3 * 3 = 9
+    potencia(3, 3) = 3 * 3 * 3 = 27
+    potencia(1, 100) = 1 * 1 * ...* 1 = 1
 
 <p>Crea una página web que pide x y n, y luego muestra el resultado de potencia(x,n).</p>
 <p>Nota: En esta tarea la función debe soportar sólo valores naturales de n: enteros desde 1.</p>
@@ -152,15 +152,15 @@
 <h1>Ejercicio 28</h1>
 <p>Reemplaza las funciones con funciones flecha en el código:</p>
 
-  function preguntar(pregunta, si, no) {
-    if (confirm(pregunta)) si()
-    else no();
-  }
-  preguntar(
-    "¿Estás de acuerdo?",
-    function() { alert("Estás de acuerdo."); },
-    function() { alert("Has cancelado la ejecución."); }
-  );
+    function preguntar(pregunta, si, no) {
+      if (confirm(pregunta)) si()
+      else no();
+    }
+    preguntar(
+      "¿Estás de acuerdo?",
+      function() { alert("Estás de acuerdo."); },
+      function() { alert("Has cancelado la ejecución."); }
+    );
 
 <h1>Ejercicio 29</h1>
 <p>Crear una función leerNumero que pide números hasta que el visitante introduce un valor numérico válido.</p>
@@ -202,7 +202,7 @@
 <p>Crear una función extraerValorMoneda(str) que extraiga el valor numérico de este string y lo devuelva.</p>
 <p>Ejemplo:</p>
 
-  alert( extraerValorMoneda('$120') === 120 ); // true
+    alert( extraerValorMoneda('$120') === 120 ); // true
 
 <h1>Ejercicio 35</h1>
 <p>Crea un objeto Date para la fecha: Feb 20, 2012, 3:12am. La zona horaria es la local.</p>
@@ -212,14 +212,14 @@
 <p>Escribir una función getDiaSemana(date) para mostrar el día de la semana en formato corto: ‘L’, ‘M’, ‘X’, ‘J’, ‘V’, ‘S’, ‘D’.</p>
 <p>Por ejemplo:</p>
 
-  let date = new Date(2012, 0, 3);  // 3 Jan 2012
-  alert( getDiaSemana(date) );        // debería mostrar "M"
+    let date = new Date(2012, 0, 3);  // 3 Jan 2012
+    alert( getDiaSemana(date) );        // debería mostrar "M"
 
 <h1>Ejercicio 37</h1>
 <p>Los países europeos tienen días de la semana comenzando en lunes (número 1), luego martes (número 2), y así hasta domingo (número 7). Escribir una función getDiaLocal(date) que devuelva el día "europeo" de la semana para date.</p>
 
-  let date = new Date(2012, 0, 3);  // 3 Jan 2012
-  alert( getDiaLocal(date) );       // martes, debería mostrar 2
+    let date = new Date(2012, 0, 3);  // 3 Jan 2012
+    alert( getDiaLocal(date) );       // martes, debería mostrar 2
 
 <h1>Ejercicio 38</h1>
 <p>Crear una fucnión getFechaHace(fecha, dias) que devuelva el día del mes que fue dias días antes de fecha.</p>
@@ -246,7 +246,7 @@
 <p>Escribir una función getSegundosHoy() que devuelva el número de segundos desde el principio del día de hoy.</p>
 <p>Por ejemplo, si ahora son las 10:00 am, y no se hay cambio de hora de verano, entonces:</p>
 
-  getSegundosHoy() == 36000 // (3600 * 10)
+    getSegundosHoy() == 36000 // (3600 * 10)
 
 <p>La función debería funcionar en cualquier día. Esto es, debería no tener guardado el valor de “hoy”.</p>
 
@@ -254,7 +254,7 @@
 <p>Crear una función getSegundosHastaManana() que devuelva el número de segundos que quedan hasta mañana.</p>
 <p>Por ejemplo, si hoy es 23:00, entonces:</p>
 
-  getSegundosHastaManana() == 3600
+    getSegundosHastaManana() == 3600
 
 <p>Nota. La función debe funcionar cualquier día del año, el "hoy" no está escrito.</p>
 
